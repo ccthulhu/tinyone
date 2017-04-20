@@ -1,0 +1,317 @@
+@import "variables";
+@import "custom_var";
+@import "normalize.css";
+
+
+* {
+ -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+.container {
+  max-width: 70%;
+  padding: 0;
+}
+
+// Typography **********************************
+
+body {
+  color: $gray-base;
+}
+
+@media (min-width: $screen-md) {
+
+  body {
+    font-size: $font-size-base-medium;
+    h1, .h1 { font-size: $font-size-h1-medium; }
+    h2, .h2 { font-size: $font-size-h2-medium; }
+    h3, .h3 { font-size: $font-size-h3-medium; }
+    h4, .h4 { font-size: $font-size-h4-medium; }
+    h5, .h5 { font-size: $font-size-h5-medium; }
+    h6, .h6 { font-size: $font-size-h6-medium; }
+  }
+
+}
+
+@media (min-width: 1440px) {
+
+  body {
+    font-size: $font-size-base-large;
+    h1, .h1 { font-size: $font-size-h1-large; }
+    h2, .h2 { font-size: $font-size-h2-large; }
+    h3, .h3 { font-size: $font-size-h3-large; }
+    h4, .h4 { font-size: $font-size-h4-large; }
+    h5, .h5 { font-size: $font-size-h5-large; }
+    h6, .h6 { font-size: $font-size-h6-large; }
+  }
+
+}
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+h3 {
+  color: $gray-dark;
+}
+
+p {
+  color: $gray;
+}
+.fa {
+  font-size: $icon-size;
+}
+
+/*******Header*******/
+
+header {
+  background-color: $color-bg;
+}
+
+.navbar-collapse {
+  border-top: none;
+}
+
+.navbar-default {
+  background-color: $color-bg;
+  border-color: $color-bg;
+
+  .navbar-brand {
+    color: $gray-base;
+    font-size: $font-size-h2;
+    font-weight: 700;
+    &:hover,
+    &:focus {
+      border-color: $color-bg;
+      outline: thin dotted;
+    }
+  }
+
+  .navbar-nav {
+    padding-top: 12px;
+    margin-right: 10px;
+    > li > a {
+      color: $gray-base;
+      font-size: $font-size-h4;
+      font-weight: 700;
+
+      &:hover,
+      &:focus {
+        color: $navbar-default-brand-hover-color;
+        outline: thin dotted;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: transparent;
+
+    &:hover,
+    &:focus {
+      outline: thin dotted;
+      background-color: transparent;
+    }
+    .icon-bar {
+      background-color: $gray-base;
+    }
+  }
+}
+
+// Slider ************************************
+
+#main {
+  padding: 20px;
+  background-color: $color-bg;
+
+  .main-content {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .animation.animated-item-1 {
+    -webkit-animation: fadeInUp 300ms linear 300ms both;
+    -moz-animation: fadeInUp 300ms linear 300ms both;
+    -o-animation: fadeInUp 300ms linear 300ms both;
+    -ms-animation: fadeInUp 300ms linear 300ms both;
+    animation: fadeInUp 300ms linear 300ms both;
+  }
+
+  .animation.animated-item-2 {
+   -webkit-animation: fadeInUp 300ms linear 600ms both;
+   -moz-animation: fadeInUp 300ms linear 600ms both;
+   -o-animation: fadeInUp 300ms linear 600ms both;
+   -ms-animation: fadeInUp 300ms linear 600ms both;
+   animation: fadeInUp 300ms linear 600ms both;
+  }
+
+  .animation.animated-item-3 {
+   -webkit-animation: fadeInUp 300ms linear 900ms both;
+   -moz-animation: fadeInUp 300ms linear 900ms both;
+   -o-animation: fadeInUp 300ms linear 900ms both;
+   -ms-animation: fadeInUp 300ms linear 900ms both;
+   animation: fadeInUp 300ms linear 900ms both;
+  }
+
+  .animation.animated-item-4 {
+   -webkit-animation: fadeInUp 300ms linear 1200ms both;
+   -moz-animation: fadeInUp 300ms linear 1200ms both;
+   -o-animation: fadeInUp 300ms linear 1200ms both;
+   -ms-animation: fadeInUp 300ms linear 1200ms both;
+   animation: fadeInUp 300ms linear 1200ms both;
+  }
+
+  .animation.animated-item-5 {
+   -webkit-animation: fadeInUp 300ms linear 1500ms both;
+   -moz-animation: fadeInUp 300ms linear 1500ms both;
+   -o-animation: fadeInUp 300ms linear 1500ms both;
+   -ms-animation: fadeInUp 300ms linear 1500ms both;
+   animation: fadeInUp 300ms linear 1500ms both;
+  }
+
+  a {
+    > i.fa {
+      color: $gray-darker;
+      margin-right: 20px;
+      &:hover {
+        color: $navbar-default-link-hover-color;
+      }
+      &:focus {
+        color: $navbar-default-link-hover-color;
+        outline: thin dotted;
+      }
+    }
+    &:hover {
+      color: $navbar-default-link-hover-color;
+    }
+    &:focus {
+      color: $navbar-default-link-hover-color;
+      outline: thin dotted;
+    }
+  }
+
+  img {
+    float: right;
+  }
+}
+
+
+
+/******* Features *******/
+
+#features {
+  padding: 50px 0;
+
+  h1 + h3 {
+    color: $gray;
+    margin-bottom: 50px;
+  }
+
+  .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+  }
+
+  .feature-wrap {
+    max-width: 300px;
+    min-width: 300px;
+    overflow: hidden;
+    padding: 0 10px;
+
+    p {
+      font-size: $font-size-small;
+      color: $gray-light;
+    }
+    h3 {
+      color: $gray-darker;
+    }
+    i {
+      font-size: $icon-size;
+      height: 110px;
+      width: 50px;
+
+      float: left;
+      text-align: center;
+      margin-top: 20px;
+      margin-right: 10px;
+    }
+  }
+}
+
+
+
+/*******Footer*******/
+
+footer {
+  background-color: $gray-base;
+
+  h1 {
+    color: $color-bg;
+  }
+
+  h3 {
+    color: $gray-light;
+  }
+  .form-inline {
+    margin: 30px auto;
+  }
+
+  .btn-submit {
+    background-color: $color-bg;
+    border-color: $color-bg;
+    color: $gray-base;
+    font-size: $font-size-h4;
+    font-weight: 700;
+
+  }
+
+  .social {
+    a {
+      color: $color-bg;
+      font-size: $social-font-size;
+      margin: 0 10px;
+      @media (min-width: $screen-md) {
+        margin: 0 15px;
+      }
+      &:focus {
+        outline: thin dotted;
+      }
+    }
+  }
+
+  .row-info {
+
+    margin: 20px auto;
+    p {
+      color: $base-text;
+      font-size: $font-size-h5;
+      margin: 0;
+      @media (min-width: $screen-md) {
+        font-size: $font-size-h4;
+      }
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      font-size: $font-size-h5;
+      color: $base-text;
+      &:focus {
+        outline: thin dotted;
+      }
+
+      @media (min-width: $screen-md) {
+        font-size: $font-size-h4;
+      }
+    }
+
+  }
+
+  .copyright {
+    padding: 30px;
+    background-color: $gray-base;
+  }
+}

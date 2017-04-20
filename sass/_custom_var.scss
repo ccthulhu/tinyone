@@ -1,0 +1,23 @@
+$color-bg: #fcdb00;
+$base-text: #fff;
+$default-font-family: 'PT Sans', sans-serif;
+
+$social-font-size: ceil(($font-size-base * 1.25));
+$icon-size: ceil(($font-size-base * 3));
+
+$font-size-base-medium: floor(($font-size-base * 1.143));
+$font-size-base-large: floor(($font-size-base * 1.286));
+
+$font-size-h1-medium: floor(($font-size-base-medium * 2.6));
+$font-size-h2-medium: floor(($font-size-base-medium * 2.15));
+$font-size-h3-medium: ceil(($font-size-base-medium * 1.7));
+$font-size-h4-medium: ceil(($font-size-base-medium * 1.25));
+$font-size-h5-medium: $font-size-base-medium;
+$font-size-h6-medium: ceil(($font-size-base-medium * 0.85));
+
+$font-size-h1-large: floor(($font-size-base-large * 2.6));
+$font-size-h2-large: floor(($font-size-base-large * 2.15));
+$font-size-h3-large: ceil(($font-size-base-large * 1.7));
+$font-size-h4-large: ceil(($font-size-base-large * 1.25));
+$font-size-h5-large: $font-size-base-large;
+$font-size-h6-large: ceil(($font-size-base-large * 0.85));
