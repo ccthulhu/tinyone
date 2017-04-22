@@ -272,10 +272,8 @@ footer {
     a {
       color: $color-bg;
       font-size: $social-font-size;
-      margin: 0 10px;
-      @media (min-width: $screen-md) {
-        margin: 0 15px;
-      }
+      margin: 0 5px;
+      
       &:focus {
         outline: thin dotted;
       }
@@ -289,9 +287,6 @@ footer {
       color: $base-text;
       font-size: $font-size-h5;
       margin: 0;
-      @media (min-width: $screen-md) {
-        font-size: $font-size-h4;
-      }
     }
     li {
       list-style: none;
@@ -313,5 +308,36 @@ footer {
   .copyright {
     padding: 30px;
     background-color: $gray-base;
+  }
+}
+
+@media only screen and (min-width: $screen-md) {
+
+  footer {
+    .social {
+      a {
+        margin: 0 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    .form-group {
+      button {
+        margin-top: 7px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  footer {
+    .row-info {
+      a {
+        font-size: $font-size-small;
+      }
+    }
   }
 }

@@ -230,12 +230,7 @@ footer .btn-submit {
 footer .social a {
   color: #fcdb00;
   font-size: 18px;
-  margin: 0 10px;
-}
-@media (min-width: 992px) {
-  footer .social a {
-    margin: 0 15px;
-  }
+  margin: 0 5px;
 }
 footer .social a:focus {
   outline: thin dotted;
@@ -247,11 +242,6 @@ footer .row-info p {
   color: #fff;
   font-size: 14px;
   margin: 0;
-}
-@media (min-width: 992px) {
-  footer .row-info p {
-    font-size: 18px;
-  }
 }
 footer .row-info li {
   list-style: none;
@@ -271,4 +261,20 @@ footer .row-info a:focus {
 footer .copyright {
   padding: 30px;
   background-color: #000;
+}
+
+@media only screen and (min-width: 992px) {
+  footer .social a {
+    margin: 0 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer .form-group button {
+    margin-top: 7px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  footer .row-info a {
+    font-size: 12px;
+  }
 }
